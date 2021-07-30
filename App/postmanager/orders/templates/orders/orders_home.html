@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %} 
+
+{%block title%} Заказы на сайте {% endblock %} 
+
+{% block content %}
+<div class='features'>
+    <h1>Список заказов</h1>
+
+    {% if orders %} {% for item in orders %}
+    <div class='alert alert-warning'>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.date_of_creating }}</p>
+    </div>
+    {% endfor %} {% else %}
+
+    <p>У вас нет заказов</p>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

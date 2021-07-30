@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %} 
+
+{%block title%} 
+Добавить заказ 
+{% endblock %} 
+
+{% block content %}
+<div class='features'>
+    <h1> Добавить заказ </h1>
+    <form method="POST">
+        {% csrf_token %} 
+        {{ form.title }} <br>
+        {{ form.sender_name }} <br> 
+        {{ form.sender_addres }} <br>
+        {{ form.receiver_name }} <br>
+        {{ form.receiver_addres }} <br>
+        <!-- {{ form.date_of_creating }} <br> -->
+        {{ form.weight }} <br>
+        <span>{{ error }}</span>
+
+        <button class='btn btn-success' type='submit'>Добавить заказ</button>
+    </form>
+</div>
+
+{% endblock %}

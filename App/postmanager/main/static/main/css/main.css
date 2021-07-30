@@ -1,0 +1,96 @@
+body {
+    background: rgb(165, 173, 177);
+}
+
+aside {
+    float: left;
+    background: whitesmoke;
+    width: 20%;
+    padding: 2.5%;
+    height: 150vh;
+    color: black;
+    border-right: 5px solid rgb(66, 63, 63);
+}
+
+aside img {
+    width: 75px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 25px;
+    margin-left: 5px;
+    font-weight: 10px;
+    position: relative;
+    top: 30px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul {
+    list-style: None;
+}
+
+aside ul li {
+    color: black;
+    display: block;
+    font-size: 15pt;
+    margin-top: 15px;
+    text-align: left;
+    font-family: sans-serif;
+    transition: transform .3s ease;
+}
+
+aside ul li:hover,
+aside ul a:hover {
+    color: rgb(59, 92, 224);
+    text-decoration: None;
+    transform: scale(1.05);
+}
+
+aside ul button {
+    background: grey;
+    font-size: 15pt;
+    color: white;
+}
+
+main .features {
+    float: right;
+    color: black;
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+}
+
+main .features h1 {
+    font-size: 50px;
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto
+}
+
+main h1 {
+    color: rgb(26, 17, 17);
+    text-align: center;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+    color: black;
+    background-color: rgb(220, 200, 238);
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
